@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
+    padding: 1rem 2rem 4 rem;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto; 
+   border: 3px solid black !important;
+   /* why border no show? */
+   padding: 10px;
+}
+
+
+.row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.column {
+  padding: 1rem;
+  flex: 1;
+  border: 1px solid gray;
+  min-width: 10px;
+  min-height: 20px;
+  display: inline-block;
+}
+
+
+
+.my-color-class {
+  background-color: blue;
+}
