@@ -53,9 +53,6 @@ dd.appendChild(row1);
 let rows = document.getElementsByClassName("row");;
 let columns = document.getElementsByClassName("column");
 
-let numRows = prompt("Enter the number of rows", "16")
-let columnNum = prompt("Enter the number of columns", "16")
-
 // Creates a default grid sized 16x16
 //Leaning more towards using default value for prompt but
 //we will see
@@ -82,20 +79,35 @@ function makeColumn(columnNum){
   };
 }
 
+defaultGrid()
+
+function gridButton() {
+let numRows = prompt("Enter the number of rows")
+let columnNum = prompt("Enter the number of columns")
+
+
 const r = numRows;
+
+
+
 const c = columnNum;
 
-console.log(r)
-console.log(c)
 
-//defaultGrid()
-  makeRows(r);
-  makeColumn(c);
+
+
+makeRows(r);
+makeColumn(c);
+}
+
+
 
  //trying to implement event delegation
  //https://davidwalsh.name/event-delegate
- document.getElementById('container').addEventListener('mouseover', function(e) {
-  e.target.classList.add('my-colour-class')
+ document.getElementById('container').addEventListener('mouseover', (event) => {
+  if (event.target.matches('.column')){
+      event.target.classList.add('my-color-class');
+  }
+  
 });
 
 

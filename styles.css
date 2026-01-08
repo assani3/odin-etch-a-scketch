@@ -7,34 +7,34 @@ body {
 
 header {
     padding: 1rem 2rem 4 rem;
+    margin: 0 auto;
 }
 
-.container {
-   max-width: 1200px;
-   margin: 0 auto; 
-   border: 3px solid black !important;
+#container {
+   max-width: 5000px;
+   margin: 0 auto;
+   /* border: 3px solid black; */
    /* why border no show? */
    padding: 10px;
+   /* display: flex; */
+   /* flex-direction: column; */
 }
 
 
 .row {
   display: flex;
-  gap: 5px;
-  margin-bottom: 5px;
 }
 
 .column {
   padding: 1rem;
-  flex: 1;
   border: 1px solid gray;
-  min-width: 10px;
-  min-height: 20px;
+  /* width: 0.1px;
+  height: 0.1px; */
   display: inline-block;
 }
 
 
 
 .my-color-class {
-  background-color: blue;
+  background-color: blue !important;
 }
