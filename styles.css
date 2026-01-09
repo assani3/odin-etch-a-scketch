@@ -6,20 +6,17 @@ body {
 }
 
 header {
-    padding: 1rem 2rem 4 rem;
+    padding: 1rem 2rem 4rem;
     margin: 0 auto;
 }
 
 #container {
-   max-width: 5000px;
-   margin: 0 auto;
-   /* border: 3px solid black; */
-   /* why border no show? */
+   width: 960px;
+   height: 960px;
    padding: 10px;
-   /* display: flex; */
-   /* flex-direction: column; */
+   display: flex;
+   flex-direction: column;
 }
-
 
 .row {
   display: flex;
@@ -28,13 +25,12 @@ header {
 .column {
   padding: 1rem;
   border: 1px solid gray;
-  /* width: 0.1px;
-  height: 0.1px; */
+  width: 0.1px;
+  height: 0.1px;
   display: inline-block;
 }
 
-
-
 .my-color-class {
-  background-color: blue !important;
+  background-color: blue;
 }
+
